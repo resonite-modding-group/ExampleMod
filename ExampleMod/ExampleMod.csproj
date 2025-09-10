@@ -6,7 +6,6 @@
 		<Nullable>enable</Nullable>
 		<!-- Change CopyToMods to true if you'd like builds to be moved into the Mods folder automatically-->
 		<CopyToMods Condition="'$(CopyToMods)'==''">true</CopyToMods>
-		<DebugType Condition="'$(Configuration)'=='Debug'">embedded</DebugType>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(ResonitePath)'==''">
