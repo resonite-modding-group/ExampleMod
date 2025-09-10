@@ -12,7 +12,7 @@ public class ExampleMod : ResoniteMod {
 	public override string Link => "https://github.com/resonite-modding-group/ExampleMod/";
 
 	public override void OnEngineInit() {
-		Harmony harmony = new Harmony("com.example.ExampleMod");
+		Harmony harmony = new("com.example.ExampleMod");
 		harmony.PatchAll();
 	}
 
