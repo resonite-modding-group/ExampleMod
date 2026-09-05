@@ -16,13 +16,14 @@
 		<ResonitePath Condition="Exists('$(HOME)/.steam/steam/steamapps/common/Resonite/')">$(HOME)/.steam/steam/steamapps/common/Resonite/</ResonitePath>
 	</PropertyGroup>
 
+	<ItemDefinitionGroup>
+		<Reference Private="False"/>
+	</ItemDefinitionGroup>
+	
 	<ItemGroup>
 		<PackageReference Include="ResoniteModLoader" Version="5.0.1" />
 		<PackageReference Include="Lib.Harmony" Version="2.4.2" />
-		<Reference Include="FrooxEngine">
-			<HintPath>$(ResonitePath)FrooxEngine.dll</HintPath>
-			<Private>False</Private>
-		</Reference>
+		<Reference Include="FrooxEngine" HintPath="$(ResonitePath)FrooxEngine.dll" />
 	</ItemGroup>
 
 	<ItemGroup>
